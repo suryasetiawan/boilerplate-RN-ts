@@ -1,1 +1,3 @@
 # boilerplate-RN-ts
+
+React Native typescript v.0.7....
