@@ -1,0 +1,5 @@
+assets/appcenter-config.json
+res/values/strings.xml
+assets/index.android.bundle
+res/**/node_modules_*
+res/**/app_assets_*

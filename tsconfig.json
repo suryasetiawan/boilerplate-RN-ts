@@ -1,0 +1,43 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "ES2018",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": [
+      "ESNext",
+      "ESNext.AsyncIterable"
+    ],
+    "isolatedModules": false,
+    "esModuleInterop": false,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "types": [ "node" ],
+    "typeRoots": [ "./app/types", "../node_modules/@types", "../node_modules", "../app/@types" ],
+
+    /* Completeness */
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["app/*"],
+      "tests": ["tests/*"],
+      "@app": ["app/index"],
+      "@app/*": ["app"],
+      "@kernel": ["app/kernel/index"],
+      "@kernel/*": ["app/kernel"],
+      "@store": ["app/store/index"],
+      "@store/*": ["app/store"],
+      "@assets": ["app/assets/index"],
+      "@assets/*": ["app/assets"],
+      "@screens": ["app/screens/index"],
+      "@screens/*": ["app/screens"],
+      "@utils": ["app/utils/index"],
+      "@utils/*": ["app/utils"],
+    }
+  }
+}
